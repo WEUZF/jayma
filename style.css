@@ -1,7 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: yellow;
+   
 }
 
 .logo{
@@ -13,6 +17,7 @@ header{
     justify-content: space-between;
     box-shadow: 2px 1px 5px black;
     margin: 0;
+    width: 100%;
 
 }
 nav ul{
@@ -187,7 +192,7 @@ span{
     color: green;
 }
 #temoie{
-    background-image: url(img/2.PNG);
+    /* background-image: url(img/2.PNG); */
     background-repeat: no-repeat;
     background-size: 100%;
     padding-top: 1px;
@@ -223,7 +228,7 @@ h2 , p{
 .section4{
        display: flex;
        justify-content: space-around;
-         background-color: gainsboro;
+         background-color: rgb(224, 223, 223);
          padding: 80px;
       
 }
@@ -241,8 +246,6 @@ h2 , p{
     background-color: black;
 }
 .email div{
-    
-    
     display: flex;
       align-items: center;
       justify-content: center;
@@ -280,8 +283,7 @@ h2 , p{
     justify-content:center;
     align-items: center;  
     border-radius: 5px;
-    background-color: white;
-   
+    background-color: white;   
 }
 .srvic div , h5{
    color: green;
@@ -342,20 +344,346 @@ h2 , p{
     background-color: white;
     color: black;
 }
-
-@media screen and  ( max-width: 780px){
+/* la partie responsive */
+ 
+ @media  ( max-width: 900px){
     .logo {
-    width: 100px; }
-    header {
-        height: 40px;
-        width: 100px;
-    }
-    h1{
-        font-size: 20px;
-        margin: 20px 0px 0px 0px;
-    }
-    nav li a{
-        font-size: 12px;
-        padding: 10px;
-    } 
+    width: 90px; 
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
+
+    header {
+        width: 100%;
+        display: flex;
+        gap: 5px;
+    }
+
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-top: 15px;
+    } 
+
+    .hero div img{
+        width: 50%;
+    }
+     .hero div h1 {
+            font-size: 20px;
+            margin-left: 10px;
+            color: green;
+   }
+   .hero div h2 {
+            font-size: 20px;
+            margin-left: 0px;
+   }
+   .agro {
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+   }
+    .agro .un {
+         width:100%;
+    } 
+
+   .un img{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    width: 50%;
+   }
+   .agro .deux {
+         width:100%;
+    } 
+    .section4 {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 10px;
+        border-radius: 5px;
+    
+    }
+    .email{
+    width: 70%;
+    margin: 10px;
+    border-radius: 5px;
+  
+    }
+}
+@media screen and (max-width: 468px){
+        header{
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+    }
+   header div{
+           flex-direction: row;   
+           font-size: 90px;
+   }
+    header div img{
+           flex-direction: row;   
+           font-size: 100x;
+   }
+   .icones {
+        display: flex;
+        gap: 30px;
+        padding-top: 20px;
+        flex-direction:column ;
+        font-size: 105px;
+        padding-right: 90px;
+        margin-left: 50px;
+   }
+   /* nav{
+    display: flex;
+    flex-direction:row;
+   } */
+   nav ul{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      list-style-type: none;
+      margin-left: 40px;
+      
+}
+   nav ul li {
+    display: flex;
+    flex-direction:row ;
+   }
+   .hero{
+        display: flex;
+        flex-direction:column ;
+        font-size: 10px;
+   }
+   .hero div h1 {
+            font-size: 20px;
+            margin-left: 10px;
+            color: green;
+   }
+   .hero div h2 {
+            font-size: 15px;
+            margin-left: 0px;
+   }
+   
+   .hero div img{
+             width: 90%;
+             margin: 10px;
+   }
+   .hero div button{
+              font-size: 20px;
+              margin-bottom: 10px;
+              width: 70%;
+              margin-top: 15px;
+     } 
+   .agro {
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+      margin-left: 10px;
+   }
+   
+   .agro .un {
+         width:100%;
+        
+    } 
+
+   .un img{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 90px;
+   }
+   .agro .deux {
+         width:100%;
+    } 
+   .deux h1{
+        /* display: flex;
+        flex-direction: column; */
+        /* margin-left: 10px;
+        width: 100%; */
+        text-align: center;
+        font-size: 20px;
+   }
+   .deux p{
+    margin-top: 20px;
+        margin-left: 20px;
+   }
+   .deux img{
+        margin-left: 100px;
+   }
+
+   #section{
+    width: 105%;
+    margin-top: 10px;
+    border-radius: 5px 5px;
+    
+}
+#section h3{
+    font-size: 30px
+}
+   .produits1 div{
+    width: 80%;
+    margin-left: 10px;
+    padding-left:  0px;
+       margin: 10px;
+   }
+   .produits1{
+      display: flex;
+    flex-direction: column;
+    padding: 0px;
+   }
+   .produits1 div button{
+    padding-left: 0;
+   }
+   .produits2{
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+   }
+   .produits2 div{
+            width: 80%;
+            margin-left: 10px;
+            padding-left: 10px;
+            margin: 10px;
+   }
+    #temoie {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+       
+    }
+    #temoie h2{
+        font-size: 25px;
+    }
+    #temoie div h4 {
+       margin-left: 700px;
+    }
+    .temoignages{
+    display: flex;
+    flex-direction: column;
+    }
+    .temoignages div {
+             width: 100%;
+    }
+    .temoignages div p{
+         width: 40%;
+    }
+
+    .section4 {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-left: 10px;
+        border-radius: 5px;
+    
+    }
+   .section4 div{
+    width: 100%;
+    margin-left: 1px;
+    
+   }
+   .section4 div img ,p{
+    width: 100%;
+   
+   }
+   .email{
+    width: 65%;
+    margin: 10px;
+    border-radius: 5px;
+  
+    }
+   .email div, input{
+    width: 50%;
+      margin-left: 10px;
+   }
+   .email div, button{
+    width: 100%;
+     margin-left: 10px;
+   }
+   #services{
+    width: 91%;
+    margin-left: 10px;
+    border-radius: 5px;
+   
+   }
+   #sevices, h3{
+    width: 100%;
+   }
+   .srvic div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+   .contact{
+    width:91%;
+    margin-left: 10px;
+    border-radius: 5px;
+   }
+   .contact div{
+    width: 100%;
+   }
+   .contact h3{
+    width: 90%;
+    color: black;
+   }
+   
+   
+    body{
+        margin-right: 0;
+    }
+    
+    /* .deux p {
+         width: 50%;
+            
+    }
+    .deux h1{
+        font-size: 15px;
+    }
+    .deux img{
+        width: 50%;
+    } */
+    
+   .contact h3{
+    margin-left: 30px;
+   } 
+/* .hero{
+    display: flex;
+    flex-direction:column ;
+    font-size: 10px;
+}
+.hero div img{
+    width: 50%;
+    margin-left: 50px;
+}
+.hero div h1{
+    font-size: 10px;
+}
+.hero div h2{
+     font-size: 10px;
+     margin-left: 0px;
+}
+.hero div button{
+ font-size: 5px;
+     margin-bottom: 10px;
+} */
+/* .temoignages{
+    display: flex;
+    flex-direction: column;
+}
+.temoignages div {
+    width: 100%;
+} */
+
+ #footer{
+        display: flex;
+        flex-direction: column;    
+ }
+  #footer, p{
+        width: 95%;
+ }
+ #footer div{
+    width: 100%;
+ }
+}  
